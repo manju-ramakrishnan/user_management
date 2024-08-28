@@ -6,7 +6,7 @@ var logger = require('morgan');
 var dotenv = require('dotenv');
 const cors = require('cors');
 dotenv.config();
-
+const sequelize = require('./config/config');
 var authRoutes = require('./routes/authRoutes');
 var userRoutes = require('./routes/userRoutes');
 
